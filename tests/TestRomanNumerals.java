@@ -11,14 +11,15 @@ public class TestRomanNumerals {
 	public void testNumbersToThree() {
 		RomanNumerals testNumerals = new RomanNumerals();
 		scanString = new Scanner(System.in);
-		String numberString=scanString.nextLine();
-		int i = testNumerals.convertToInteger(numberString);
+		String numberString=scanString.next();
+		int i=0;
+		i = testNumerals.convertToInteger(numberString);
 		System.out.print("The value of the i is: "+i);
 		switch(i)
 		{
 			case 1:
 			{
-				if(numberString=="I")
+				if(numberString.equals("I"))
 				{
 					break;
 				}
@@ -29,7 +30,7 @@ public class TestRomanNumerals {
 			}
 			case 2:
 			{
-				if(numberString=="II")
+				if(numberString.equals("II"))
 				{
 					break;
 				}
@@ -40,7 +41,7 @@ public class TestRomanNumerals {
 			}
 			case 3:
 			{
-				if(numberString=="III")
+				if(numberString.equals("III"))
 				{
 					break;
 				}
